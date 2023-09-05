@@ -1,38 +1,181 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30%;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  color:  rgba(236, 121, 180, 0.696);
+  width: 150px;
+  height: 130px;
+  font-family: 'Courier New', Courier, monospace; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons:hover{
+  background-color:rgba(242, 193, 218, 0.345);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.011);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.break-button{
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30%;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  color:  rgba(146, 146, 233, 0.564);
+  width: 150px;
+  height: 130px;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.break-button:hover{
+  background-color: rgba(146, 146, 233, 0.121);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.011);
+}
+
+.end{
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30%;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  color:  rgba(146, 146, 233, 0.564);
+  width: 150px;
+  height: 130px;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.end:hover{
+  background-color: rgba(146, 146, 233, 0.121);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.011);
+}
+
+button.tasks {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: white; /* Default background color */
+  color: rgba(68, 190, 68, 0.833);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 8px;
+  display: flexbox;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Courier New', Courier, monospace; 
 }
 
-.App-link {
-  color: #61dafb;
+button.tasks:hover{
+  background-color: rgba(68, 190, 68, 0.068);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.011);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* App.css */
+.starting {
+  background-color: rgba(144, 238, 144, 0.231); /* 淡绿色 */
+}
+
+.running {
+  background-color: rgb(250, 227, 231); /* 淡粉色 */
+}
+
+.breaking {
+  background-color: rgba(216, 237, 244, 0.779); /* 淡蓝色 */
+}
+
+h2.title {
+  color: rgb(35, 135, 35);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-family: 'ADLaM Display', cursive;
+  font-size: xxx-large
+}
+
+h2.task-ongoing{
+  color: rgba(236, 121, 180, 0.696);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-family: 'ADLaM Display', cursive;
+  font-size: xxx-large
+}
+
+h2.break-color{
+  color: rgba(146, 146, 233, 0.564);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-family: 'ADLaM Display', cursive;
+  font-size: xxx-large
+}
+
+h1.timer{
+  color: rgba(236, 121, 180, 0.674);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-family: 'ADLaM Display', cursive;
+  font-size:600%;
+  font-weight:lighter;
+}
+
+h1.break-timer{
+  color:rgba(146, 146, 233, 0.461);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-family: 'ADLaM Display', cursive;
+  font-size:600%;
+  font-weight:lighter;
+}
+
+footer{
+  color: rgb(35, 135, 35);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: small;
+  margin-top: 10px;
+}
+
+h4.name{
+  color: rgb(35, 135, 35);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+}
+
+.responsive-tomato{
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.responsive-tomato:hover {
+  transform: scale(1.03); /* 放大5% */
+}
+
+@media (max-width: 600px) {
+  .responsive-tomato {
+      width: 75%; /* 将图片宽度设置为屏幕宽度的75% */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.footer2{
+  color: rgb(247, 171, 220);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: small;
+  margin-top: 10px;
+}
+
+.break-footer{
+  color: rgba(146, 146, 233, 0.564);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: small;
+  margin-top: 30px;
 }
