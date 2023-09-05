@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [task, setTask] = useState("");
   const [isTimerRunning, setIsTimerRunning] = useState(false);
-  const [minutes, setMinutes] = useState(1);
+  const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [breakTime, setBreakTime] = useState(false);
   const [cycles, setCycles] = useState(0);
@@ -65,7 +65,7 @@ useEffect(()=>{
           if (minutes === 0) {
             if (!breakTime) {
               setBreakTime(true);
-              setMinutes(1);
+              setMinutes(8);
               setCycles(cycles + 1);
             } else {
               setBreakEnded(true);
